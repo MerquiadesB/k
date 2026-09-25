@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios y Promociones | Supermercado El Ahorro</title>
+</head>
+<body>
+    <!-- Encabezado principal de la página -->
+    <header>
+        <h1>🛒 Supermercado El Ahorro</h1>
+        <p>Cronograma Semanal de Cobertura y Descuentos Especiales 2026</p>
+    </header>
+
+    <main>
+        <!-- Tabla semántica con caption, thead, tbody, tfoot y fusiones con colspan/rowspan -->
+        <table class="tabla-supermercado" border="1">
+            <caption>Horario Semanal de Atención y Promociones Especiales - Supermercado El Ahorro 2026</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Departamento</th>
+                    <th scope="col">Turno de Cobertura</th>
+                    <th scope="col">Lunes a Jueves</th>
+                    <th scope="col">Viernes de Frescura</th>
+                    <!-- colspan="2" fusiona Sábado y Domingo en una sola columna superior -->
+                    <th scope="col" colspan="2">Fin de Semana de Ahorro Máximo (Sáb - Dom)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- rowspan="2" fusiona las 2 filas del departamento de Carnes y Lácteos -->
+                    <th scope="row" rowspan="2">Carnicería y Lácteos Frescos</th>
+                    <td>Matutino (07:00 - 13:00)</td>
+                    <td>Precios Regulares</td>
+                    <td>10% Descuento en Res</td>
+                    <!-- colspan="2" cubre las dos columnas del fin de semana -->
+                    <td colspan="2"><strong>20% Descuento en Cortes Seleccionados y Quesos</strong></td>
+                </tr>
+                <tr>
+                    <!-- NOTA: La celda de "Carnicería" NO se escribe aquí porque viene ocupada por el rowspan anterior -->
+                    <td>Vespertino (13:00 - 20:00)</td>
+                    <td>Precios Regulares</td>
+                    <td>15% en Pollo y Cerdo</td>
+                    <td>2x1 en Chorizos Criollos</td>
+                    <td>Degustación y Ofertas</td>
+                </tr>
+                <tr>
+                    <th scope="row">Frutas y Verduras Locales</th>
+                    <td>Jornada Completa (07:00 - 19:00)</td>
+                    <td>Feria del Agricultor Diario</td>
+                    <td><strong>25% Viernes Verde</strong></td>
+                    <td colspan="2">Canasta Básica de Verduras a Precio de Costo</td>
+                </tr>
+                <tr>
+                    <th scope="row">Panadería y Repostería Artesanal</th>
+                    <td>Horneado Matutino y Tarde</td>
+                    <td>Café Gratis por compra > L. 150</td>
+                    <td>Tarde de Repostería</td>
+                    <td>Pan de Yema 3x2</td>
+                    <td>Pasteles 15% Desc.</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!-- colspan="6" fusiona toda la fila inferior para el pie de tabla -->
+                    <td colspan="6">
+                        <small>📌 Promociones válidas en todas las sucursales de Tegucigalpa y San Pedro Sula. Aplican restricciones presentando la tarjeta del Club de Puntos El Ahorro.</small>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Supermercado El Ahorro. Información oficial al cliente.</p>
+    </footer>
+</body>
+</html>
